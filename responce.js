@@ -2,7 +2,7 @@ const  responce = [
   {
     id: 1,
     title: "Ipad",
-    price: "900",
+    price: 900,
     category: {
       highLevel: "Electronics",
       lowLevel: "Tablet",
@@ -12,7 +12,7 @@ const  responce = [
   {
     id: 2,
     title: "PS5",
-    price: "600",
+    price: 600,
     category: {
       highLevel: "Electronics",
       lowLevel: "Tablet",
@@ -22,7 +22,7 @@ const  responce = [
   {
     id: 3,
     title: "XBOX",
-    price: "300",
+    price: 300,
     category: {
       highLevel: "Electronics",
       lowLevel: "Tablet",
