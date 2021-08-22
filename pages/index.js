@@ -7,21 +7,20 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   let goalArray = [];
 
-  responce.map(item => {
-    const arr = {
-      id: item.id,
+  // map return array by default !
+  goalArray = responce.map(
+    ({ id, category: { highLevel, lowLevel }, title, price, salePrice }) => ({
+      id: id,
       product_details: {
-        category: `${item.category.highLevel}-${item.category.lowLevel}`,
-        name: item.title,
+        category: `${highLevel}-${lowLevel}`,
+        name: title,
       },
       price_data: {
-        price: item.price,
-        salePrice: item.salePrice,
+        price: price,
+        salePrice: salePrice,
       },
-    };
-
-    goalArray.push(arr);
-  });
+    })
+  );
 
   console.log(goalArray);
 
