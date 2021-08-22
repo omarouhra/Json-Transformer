@@ -1,4 +1,4 @@
-[
+const  responce = [
   {
     id: 1,
     title: "Ipad",
@@ -30,3 +30,5 @@
     salePrice: 100,
   },
 ];
+
+export default responce;
