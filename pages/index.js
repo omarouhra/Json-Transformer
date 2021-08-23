@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   const data = responce;
+
   // map return an array by default !
   const numbers = [1, 2, 3, 4, 5, 6];
   const doubles = numbers.map(number => number * 2);
@@ -23,12 +24,15 @@ export default function Home() {
     })
   );
 
-  console.log(goalArray);
-  console.log(doubles);
+  // console.log(goalArray);
+  // console.log(doubles);
 
   // Reduce
   const total = data.reduce((total, item) => total + item.price, 0);
-  console.log(total);
+  // console.log(total);
+
+  // Filter
+  console.log(numbers.filter(number => number !== 4));
 
   return (
     <div className={styles.container}>
